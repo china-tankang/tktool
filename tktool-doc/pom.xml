@@ -22,4 +22,12 @@
         <Automatic-Module-Name>cn.hutool.tktool.doc</Automatic-Module-Name>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>cloud.tankang.tktool</groupId>
+            <artifactId>tktool-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>
