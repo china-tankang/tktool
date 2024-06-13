@@ -13,20 +13,33 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>tktool-doc</artifactId>
+    <artifactId>tktool-poi</artifactId>
     <name>${project.artifactId}</name>
     <version>${revision}</version>
     <description>Tktool文档工具</description>
 
     <properties>
         <Automatic-Module-Name>cn.hutool.tktool.doc</Automatic-Module-Name>
+
+        <!-- versions -->
+        <poi.version>5.2.5</poi.version>
     </properties>
 
     <dependencies>
+        <!-- CORE -->
         <dependency>
             <groupId>cloud.tankang.tktool</groupId>
             <artifactId>tktool-core</artifactId>
             <version>${project.parent.version}</version>
+        </dependency>
+
+        <!-- POI -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+            <scope>compile</scope>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

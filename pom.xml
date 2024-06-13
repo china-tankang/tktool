@@ -15,7 +15,7 @@
 
     <modules>
         <module>tktool-core</module>
-        <module>tktool-doc</module>
+        <module>tktool-poi</module>
     </modules>
 
     <properties>
